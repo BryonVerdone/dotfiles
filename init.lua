@@ -37,6 +37,8 @@ require("lazy").setup(plugins, opts)
 
 -- load telescope
 local builtin = require("telescope.builtin")
+
+-- set keymap to crtl+p
 vim.keymap.set('n', '<C-p>', builtin.find_files, {})
 
 -- Need ripgrep install for live grep to work
